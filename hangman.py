@@ -78,6 +78,7 @@ length_word = len(SecretWord)
 OpenWord=[]
 #string open word
 OpenWordStr=""
+Used_Num=[]
 #zjistime kolik ma nahodne slovo pismen a nahradime je podtrzitkama ktere vytiskneme
 for element in range(0,len(SecretWord)):
 	OpenWord.append('_')
@@ -103,11 +104,13 @@ ChciPokracovat = True
 #zeptame se uzivatele na pismenko do te doby nez mu dojdou pokusy
 while ChciPokracovat:
 	if g_attempt == g_limit:
-		print("you have ran out of guesses!")
+		print("you lost! the word was,", SecretWord)
 		break
 	guess = input("Please guess a letter: ")
-
-
+	if not Used_Num.count(guess) > 0:
+		Used_Num.append(guess)
+		Used_Num = sorted(Used_Num)
+	print(Used_Num)
 #pokud pismenko neni v nasi vydefinovane abecede, oznamime to uzivateli, odecteme mu pokus a vyzveme aby to napsal spravne napiseme kolik ma zbyvajicich pokusu a ukazeme mu hangmana
 	if guess not in alphabet:
 		print("your letter is not in the a-z alphabet. Try again.")
@@ -135,3 +138,5 @@ while ChciPokracovat:
 		g_attempt += 1
 		print("you have", g_limit - g_attempt, "guesses remaining")
 		print(HANGMANPICS[g_attempt - 1])
+
+
