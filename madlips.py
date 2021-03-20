@@ -37,8 +37,8 @@ random.shuffle(adjective_list)
 random.shuffle(verb_list)
 
 
-print(adjective_list[0].capitalize(), noun_list[0], verb_list[0],'.')
-print(adjective_list[1].capitalize(), noun_list[1], verb_list[1],'.')
-print(adjective_list[2].capitalize(), noun_list[2], verb_list[2],'.')
-print(adjective_list[3].capitalize(), noun_list[3], verb_list[3],'.')
-print(adjective_list[4].capitalize(), noun_list[4], verb_list[4],'.')
+print(adjective_list[0].capitalize(), noun_list[0], verb_list[0], '.')
+print(adjective_list[1].capitalize(), noun_list[1], verb_list[1], '.')
+print(adjective_list[2].capitalize(), noun_list[2], verb_list[2], '.')
+print(adjective_list[3].capitalize(), noun_list[3], verb_list[3], '.')
+print(adjective_list[4].capitalize(), noun_list[4], verb_list[4], '.')
