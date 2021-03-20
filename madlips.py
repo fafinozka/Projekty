@@ -2,6 +2,14 @@
 #POTOOM SE PROVEDE SPOCITANI KOLIK JE JAKYCH PISMENEK V CELEM TEXTU.
 import random
 
+
+#slice_0 = slice(1)
+#slice_1 = slice(2)
+#slice_2 = slice(3)
+#slice_3 = slice(4)
+#slice_4 = slice(5)
+
+
 noun_number = 0
 noun_list = []
 adjective_number = 0
@@ -28,8 +36,9 @@ random.shuffle(noun_list)
 random.shuffle(adjective_list)
 random.shuffle(verb_list)
 
-print(adjective_list[0], noun_list[0], verb_list[0])
-print(adjective_list[1], noun_list[1], verb_list[1])
-print(adjective_list[2], noun_list[2], verb_list[2])
-print(adjective_list[3], noun_list[3], verb_list[3])
-print(adjective_list[4], noun_list[4], verb_list[4])
+
+print(adjective_list[0].capitalize(), noun_list[0], verb_list[0],'.')
+print(adjective_list[1].capitalize(), noun_list[1], verb_list[1],'.')
+print(adjective_list[2].capitalize(), noun_list[2], verb_list[2],'.')
+print(adjective_list[3].capitalize(), noun_list[3], verb_list[3],'.')
+print(adjective_list[4].capitalize(), noun_list[4], verb_list[4],'.')
