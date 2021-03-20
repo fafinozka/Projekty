@@ -10,17 +10,17 @@ verb_number = 0
 verb_list = []
 
 while noun_number < 5:
-	noun = input("please enter one noun: ")
+	noun = input(f"please enter {noun_number+1}. noun : ")
 	noun_list.append(noun)
 	noun_number += 1
 
 while adjective_number < 5:
-	adjective = input("please enter one adjective: ")
+	adjective = input(f"please enter {adjective_number+1}. adjective: ")
 	adjective_list.append(adjective)
 	adjective_number += 1
 
 while verb_number < 5:
-	verb = input("please enter one verb: ")
+	verb = input(f"please enter {verb_number+1}. verb: ")
 	verb_list.append(verb)
 	verb_number += 1
 
