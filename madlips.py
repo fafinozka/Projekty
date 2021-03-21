@@ -40,25 +40,9 @@ fifth = (adjective_list[4].capitalize() + ' ' + noun_list[4] + ' ' + verb_list[4
 
 
 story = (first + " " + second + " " + third + " " + fourth + " " + fifth)
-print(story)
-print(Counter(story))
-
-"""
-#story = []
 for element in range(5):
 	print((adjective_list[element].capitalize() + ' ' + noun_list[element] + ' ' + verb_list[element] + '.'))
+print(story)
+frekvence = Counter(story)
+print(frekvence)
 
-
-
-
-
-
-
-
-
-
-
-
-#story.append((adjective_list[element].capitalize() + ' ' + noun_list[element] + ' ' + verb_list[element] + '.'))
-#print(story[element])
-"""
