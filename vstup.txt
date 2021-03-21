@@ -1,0 +1,26 @@
+Testování je rozhodujícím aspektem, který určuje kvalitu vyvíjeného softwaru. Je to
+důleţitá součást vývoje, která určuje, jestli daná aplikace splňuje veškeré uţivatelské
+a technické poţadavky. V případě testování webových aplikací význam samotného
+testování ještě roste. Internet je mocné médium, které zpřístupňuje výsledný
+softwarový produkt miliónům uţivatelů. Je proto důleţité neopomenout ţádný
+z moţných pohledů na danou aplikaci a při tom pečlivě zváţit místa potenciálních
+výskytů chyb.
+Jsou dva hlavní důvody, proč ve výsledku software nemusí být otestován pořádně.
+Prvním jsou nedostatečné znalosti o testovacím procesu či konkrétních typech
+testování, případně opomenutí některých typů, anebo pokládání určitých druhů testů
+za nedůleţité. Následující kapitola proto popisuje samotnou úlohu testování a její
+obtíţnost a také jednotlivé typy testů, rozdělené podle různých pohledů na vyvíjený
+produkt nebo podle časového horizontu od napsání kódu.
+Druhým potenciálním důvodem pro nedostatečné otestování je malé mnoţství času.
+To je ovšem obecně velmi těţko řešitelný problém. Potenciálními řešeními jsou
+prodlouţení doby vývoje tak, aby na testování bylo dostatek času, nábor nových
+zaměstnanců na pozice testerů, pokud nebude vadit jejich počáteční neznalost
+produktu, anebo zefektivněním testovacího procesu. Jednou z cest k naplnění posledně
+zmíněného je pouţívání vhodných nástrojů, které testování ulehčí nebo jej částečně
+automatizují, a právě takovým nástrojům (ovšem jen pro webové aplikace na platformě
+ASP .NET) se v této práci věnuje kapitola 3.
+Praktickou částí práce je částečné automatizování testování zadané webové
+aplikace, kterou je Kentico CMS. Dvě další kapitoly se proto věnují popisu testované
+aplikace (i z pohledu jejího ţivotního cyklu), resp. samotnému procesu od analýzy částí,
+jejichţ testování by bylo vhodné automatizovat, přes výběr konkrétních nástrojů aţ
+k samotné implementaci automatického testování vybraných částí zadané aplikace.
