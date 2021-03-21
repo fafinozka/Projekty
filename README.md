@@ -10,7 +10,7 @@ napsat jednotliv0 projekty o cem jsou
 
 toodo:
 
-1. Pocitac casu - zeptat se na datum narozeni a pote spocitat kolik dni, hodin, minut, sekund je clovek na svete a napsat, v jakem znameni je narozen
+1. Pocitac casu - zeptat se na datum narozeni a pote spocitat kolik dni  je clovek na svete a napsat, v jakem znameni je narozen
 Napsat take kolik dni zbyva do konce aktualniho roku
 
 
