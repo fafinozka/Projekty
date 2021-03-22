@@ -62,7 +62,10 @@ if int(Date.strftime("%j")) < year_days:
 	print("you are", year_age, "years,", 365 - Date_roz, "days,", Date.strftime("%H"), "hours,", Date.strftime("%M"), "minutes and", Date.strftime("%S"), "seconds old.")
 	print("there are", 365 - int(Date.strftime("%j")), "days remaining in this year")
 	print("your chinese zodiac is:", zodiac)
+	print((year_age * 365.25) + 365 - Date_roz + 1)
 else:
+	Date_roz = year_days - int(Date.strftime("%j"))
 	print("you are", year_age, "years,", int(Date.strftime("%j")) - year_days, "days,", Date.strftime("%H"), "hours,", Date.strftime("%M"), "minutes and", Date.strftime("%S"), "seconds old.")
 	print("there are", 365 - int(Date.strftime("%j")), "days remaining in this year")
 	print("your chinese zodiac is:", zodiac)
+	print((year_age * 365.25) + 365 - Date_roz + 1)
