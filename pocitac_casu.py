@@ -57,7 +57,7 @@ while True:
 	else:
 		break
 
-if month_value.get(month_date) > 59:
+if month_value.get(month_date) > 31:
 	for element in china_zodiac:
 		if (int(age_date) - int(element)) % 12 == 0:
 			zodiac = china_zodiac.get(element)
@@ -74,10 +74,10 @@ if int(Date.strftime("%j")) < year_days:
 	print("you are", year_age, "years,", 365 - Date_roz, "days,", Date.strftime("%H"), "hours,", Date.strftime("%M"), "minutes and", Date.strftime("%S"), "seconds old.")
 	print("there are", 365 - int(Date.strftime("%j")), "days remaining in this year")
 	print("your chinese zodiac is:", zodiac)
-	print((year_age * 365.25) + 365 - Date_roz + 1)
+	print("you are alive for:",((year_age + 1)* 365.25) - Date_roz + 1, "days")
 else:
 	Date_roz = year_days - int(Date.strftime("%j"))
 	print("you are", year_age, "years,", int(Date.strftime("%j")) - year_days, "days,", Date.strftime("%H"), "hours,", Date.strftime("%M"), "minutes and", Date.strftime("%S"), "seconds old.")
 	print("there are", 365 - int(Date.strftime("%j")), "days remaining in this year")
 	print("your chinese zodiac is:", zodiac)
-	print("you are alive for:",(year_age * 365.25) + 365 - Date_roz + 1, "days")
+	print("you are alive for:",(year_age * 365.25) - Date_roz, "days")
