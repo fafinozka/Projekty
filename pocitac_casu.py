@@ -33,16 +33,19 @@ china_zodiac = {
 }
 age_date = input("what year were you born in?: ")
 year_age = (Date.year) - int(age_date)
-for element in china_zodiac:
-	if (int(age_date) - int(element)) % 12 == 0:
-		zodiac = china_zodiac.get(element)
+ag = year_age - 1
+#for element in china_zodiac:
+	#if (int(age_date) - int(element)) % 12 == 0:
+		#zodiac = china_zodiac.get(element)
 
 while True:
+
 	month_date = input("what month were you born in? (word january-december): ")
 	if month_date not in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']:
 		print("your input is not valid, try checking if your input is in lowercase and spelled correctly.")
 	else:
 		break
+
 while True:
 	day_date = input("what day of the month were you born in?(number 1-31): ")
 	if int(day_date) > 31:
@@ -53,6 +56,15 @@ while True:
 		print("your number is too small! try again.")
 	else:
 		break
+
+if month_value.get(month_date) > 59:
+	for element in china_zodiac:
+		if (int(age_date) - int(element)) % 12 == 0:
+			zodiac = china_zodiac.get(element)
+else:
+	for element in china_zodiac:
+		if (int(age_date) -1 - int(element)) % 12 == 0:
+			zodiac = china_zodiac.get(element)
 
 
 year_days = month_value.get(month_date) + int(day_date)
@@ -68,4 +80,4 @@ else:
 	print("you are", year_age, "years,", int(Date.strftime("%j")) - year_days, "days,", Date.strftime("%H"), "hours,", Date.strftime("%M"), "minutes and", Date.strftime("%S"), "seconds old.")
 	print("there are", 365 - int(Date.strftime("%j")), "days remaining in this year")
 	print("your chinese zodiac is:", zodiac)
-	print((year_age * 365.25) + 365 - Date_roz + 1)
+	print("you are alive for:",(year_age * 365.25) + 365 - Date_roz + 1, "days")
