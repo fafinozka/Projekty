@@ -5,4 +5,5 @@ cenzura = open("cenzura.txt", "r")
 content_cenzura = cenzura.read()
 cenzura_list = content_cenzura.split(",")
 cenzura.close()
+for
 print(a.replace(cenzura_list[0], len(cenzura_list[0]) * "*"))
