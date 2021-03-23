@@ -1,12 +1,12 @@
-god
-egypt
-king
-day
-man
-lord
-woman
-czech
-father
-son
+God,
+egypt,
+king,
+day,
+man,
+lord,
+woman,
+czech,
+father,
+son,
 mother
 
