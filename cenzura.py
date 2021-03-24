@@ -3,7 +3,9 @@ a=vstup.read()
 
 cenzura = open("cenzura.txt", "r")
 content_cenzura = cenzura.read()
-cenzura_list = content_cenzura.split(",")
+cenzura_list = content_cenzura.split("\n")
 cenzura.close()
-for
-print(a.replace(cenzura_list[0], len(cenzura_list[0]) * "*"))
+
+for element in cenzura_list:
+	a=(a.replace(element, int(len(element)) * "*"))
+print(a)
