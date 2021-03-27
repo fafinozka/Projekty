@@ -1,5 +1,5 @@
 "----------------------------------------------------------"
-pismenka = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+pismenka = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 			'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 pismenka_pocet = {"a": 0,"b": 0,"c": 0,"d": 0,"e": 0,"f": 0,"g": 0,"h": 0,"i": 0,"j": 0,
@@ -12,8 +12,26 @@ pismenka_pocet = {"a": 0,"b": 0,"c": 0,"d": 0,"e": 0,"f": 0,"g": 0,"h": 0,"i": 0
 ABC_count = open("ABC_count.txt", "rt")
 text = ABC_count.read()
 
-for pismenka in text:
-	if pismenka in pismenka_pocet:
-		pismenka += 1
+
+for znak in text:
+
+	for pismenko in pismenka:
+		if pismenko in znak:
+			pismenka_pocet[pismenko] += 1
+
+
 
 print(pismenka_pocet)
+
+
+"""
+vysledek= {}
+for znak in text:
+	if znak in vysledek:
+		vysledek[znak]+=1
+	else:
+		vysledek[znak]=1
+
+for i in (sorted(vysledek)):
+	print (f"Pismeno: {i}:{vysledek[i]}")
+"""
