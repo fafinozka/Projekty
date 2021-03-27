@@ -29,4 +29,3 @@ for i in vysledek:
 
 for i in (sorted(vysledek)):
 	print(f"Pismeno: {i}: {vysledek[i]}, {round(vysledek[i] / total * 100, 2)}%")
-
