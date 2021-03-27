@@ -13,5 +13,7 @@ ABC_count = open("ABC_count.txt", "rt")
 text = ABC_count.read()
 
 for pismenka in text:
-	
+	if pismenka in pismenka_pocet:
+		pismenka += 1
+
 print(pismenka_pocet)
