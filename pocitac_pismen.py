@@ -33,9 +33,22 @@ for i in (sorted(vysledek)):
 	dict[i] = {'cislo': vysledek[i], 'procento':round(vysledek[i] / total * 100, 2)}
 
 left = range(len(dict))
-
+height = []
+tick_label = []
 for i in dict:
-	height = [i]
-#tick_label = dict[0]
+	height.append( dict[i]['procento'])
+	tick_label.append(i)
 
-#sleep (100)
+plt.bar(left, height, tick_label=tick_label,
+		width=0.8, color=['black'])
+
+# naming the x-axis
+plt.xlabel('x - axis')
+# naming the y-axis
+plt.ylabel('y - axis')
+# plot title
+plt.title('My bar chart!')
+
+# function to show the plot
+plt.show()
+
