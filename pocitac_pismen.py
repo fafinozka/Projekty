@@ -43,9 +43,9 @@ plt.bar(left, height, tick_label=tick_label,
 		width=0.8, color=['black'])
 
 # naming the x-axis
-plt.xlabel('Letters')
+plt.xlabel('A - Z')
 # naming the y-axis
-plt.ylabel('Percentage')
+plt.ylabel('%')
 # plot title
 plt.title('Frequency analysis - Sun and steel')
 
