@@ -1,21 +1,23 @@
-# Projekty
+repository pro čistě studijní účely - zkouším si různé věci v Pythonu. Je to dost triviální, ala na vykoušení základních konstrukcí a algortimů dostačující.
 
-1.hangman
-rychla hra sibenice ktera vygeneruje nahodne slovo a potom se uzivatel toto slovo snazi uhodnout pokud uzivateli dojdou pokusy prohrava!
+Co tu je?
 
-2. korektor - na vstupu je text v souboru vstup='vstup.txt' <dopsat, co to dělá>
-je potreba v nem zacernit slova,ktera jsou zakazana a pri startu se nacitaji z jineho souboru cenzura='cenzura.txt'
-   na vystupu pak bude opraveny noovy soubor vystup='vystup.txt'a k nemu hlaska, co se zacernilo a na jake pozici to v puvodnim textu bylo
+1.hangman.py
+rychla hra sibenice ktera vygeneruje nahodne slovo a potom se uzivatel toto slovo snazi uhodnout pokud uzivateli dojdou pokusy, prohrava.
 
-todo:
+2. cenzura.py - na vstupu je text v souboru vstup='vstup.txt' text, který chceme cenzurovat.
+do souboru 'cenzura.txt' vlozime na kazdy radek jedno slovo ktere chceme zacenzurovat (vsechna pismena mala).
+program si otevre vstup.txt, zmeni ho na mala pismena a bude timto textem iterovat a hledat zakazana slova. pote co slova najde, nahradi je hvezdickami.
 
-a. načte text ze souboru a provede frekvenční analýzu výskytu znaků - na výstupu zobrazí seznam jednotlivých písmen a počet jejich výskytu v textu. Na každém řádku bude zvlášť písmeno. Nebude rozlišovat velká/malá písmena ("A" i "a" je stejné písmeno).
+3. RockPaperScissors.py
+kamen nuzky papir - po skonceni vypise skore
 
-b. z uživatelského vstupu načte číslo, zkontroluje, že je integer a napíše, jakými čísly je dělitelné (zajímá nás dělitelnost 3..9). Napíše, zda jde o prvočíslo.
+4. madlips.py
+program se nas zepta na pet podstatnych jmen, pridavnych jmen a sloves (anglickych), program z nich nahodne udela jednoduche vety o trech slovech napr. 'Green dog is walking'
 
+5. pocitac_casu.py
+program se nas zepta v jakem roce, mesici a dni jsme se narodili, potom nam presne rekne jak dlouho jsme na zivu a co jsme za zvire na cinskem zverokruhu.
 
-
-
-
-   
-
+6. pocitac_pismen.py - frekvenci analyza
+do souboru 'ABC_count.txt' vlozime text, ktery chceme analyzovat.
+program si soubor otevre, zmeni ho na mala pismena, mala pismena seradi abecedne po sobe a potom bude iterovat kolik jich po sobe je, mnozstvi kazdeho pismene a jednotlivych pismen se bude pocitat. program vydeli napocitane mnozstvi jednotliveho pismena celkovym mnozstvim pismen a vytvori graf, ve kterem bude mozne videt percentualni zastoupeni kazdeho z pismen v textu.
